@@ -13,7 +13,7 @@
 
 + (NSBundle *)tz_imagePickerBundle {
 #ifdef SWIFT_PACKAGE
-    NSBundle *bundle = [NSBundle module];
+    NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;
 #else
     NSBundle *bundle = [NSBundle bundleForClass:[TZImagePickerController class]];
 #endif
